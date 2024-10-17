@@ -1,0 +1,21 @@
+.flowchart {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 10px;
+}
+
+.row {
+  display: contents;
+}
+
+.column {
+  padding: 20px;
+  background-color: lightblue;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+/* Hidden elements will not be displayed */
+.hidden {
+  display: none;
+}
