@@ -1,0 +1,48 @@
+.flowchart {
+  display: grid;
+  grid-auto-columns: 1fr;
+  gap: 10px;
+}
+
+.row {
+  display: contents; /* Ensures rows are aligned properly */
+}
+
+.column {
+  padding: 10px;
+  background-color: lightblue;
+  text-align: center;
+  border: 1px solid #ccc;
+  transition: background-color 0.3s ease;
+  min-width: 100px;
+}
+
+.column:hover {
+  background-color: lightcoral; /* Highlight on hover */
+}
+
+/* Hidden elements will not be displayed */
+.hidden {
+  display: none;
+}
+
+#controls {
+  margin-bottom: 20px;
+}
+
+.button-small {
+  padding: 3px 5px;
+  font-size: 10px;
+  margin-right: 5px;
+}
+
+.row-toggle, .col-toggle {
+  display: inline-block;
+  margin: 5px 0;
+}
+
+@media screen and (max-width: 600px) {
+  .flowchart {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Adjust to screen size */
+  }
+}
